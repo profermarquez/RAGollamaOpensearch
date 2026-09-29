@@ -8,10 +8,17 @@ ollama pull nomic-embed-text
 
 # Entorno virtual y dependencias
 virtualenv env
+
 /env/Scripts/activate
+
 pip install langchain langchain-ollama langchain-community langchain-text-splitters chromadb pypdf streamlit docling
+
 pip install langchain-chroma
+
 pip install opensearch-py
+
+docker compose up -d   
+
 
 # Ejecucion 
 streamlit run main.py
